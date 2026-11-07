@@ -1,0 +1,12 @@
+[package]
+name = "native-cron-flash-repro"
+version = "0.1.0"
+edition = "2024"
+description = "Minimal GUI program showing the console windows native-cron opens on Windows"
+license = "MIT"
+publish = false
+
+[dependencies]
+native-cron = "0.2.0"
+# The software renderer works without a GPU, e.g. in a VM.
+slint = { version = "1.18.1", features = ["renderer-software"] }
